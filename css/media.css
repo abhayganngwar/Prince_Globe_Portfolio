@@ -1,0 +1,109 @@
+@media screen and (max-width:767px){
+  .container{
+    width: 100%;
+  }
+  .nav-header{
+    display: none;
+  }
+  .main{
+    height: calc(100vh - 45px);
+    top: 49px;
+  }
+  .main::before{
+    transform: skew(-26.6deg);
+    -webkit-transform: skew(-26.6deg);
+    -moz-transform: skew(-26.6deg);
+    -ms-transform: skew(-26.6deg);
+    -o-transform: skew(-26.6deg);
+}
+  .main .container{
+    overflow: hidden;
+    height: 95%;
+    display: block;
+  }
+  .main .container .image, .main .container .text{
+    margin-top: 2rem;
+  }
+  .main .container .text .title{
+    padding-top: 2rem;
+  }
+  .articles{
+    padding-block: 3rem;
+  }
+  .articles .box,
+  .gallery .items ,
+  .features .box,
+  .testimonials .items,
+  .team-members .items,
+  .services .items,
+  .top-videos .box,
+  .discount .items,
+  .footer .items{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .skills .box,
+  .works .box,
+  .works .box .work .item,
+  .pricing-plans .items{
+    flex-direction: column;
+  }
+  .skills .box,
+  .pricing-plans .items{
+    align-items: unset;
+  }
+  .works .box .image img,
+  .skills .box .image img,
+  .events .items .image img{
+    width: 100%;
+  }
+  .works .box .work{
+    margin-top: 1rem;
+  }
+  .works .box .work .item .info .name{
+    text-align: center;
+  }
+  .events::after{
+    display: none;
+  }
+  .events .items{
+    display: block;
+  }
+  .events .items .info .time{
+    gap: .5rem;
+  }
+  .events .items .info .subscribe form .form-control input[type='email']{
+    width: 68%;
+  }
+  .pricing-plans .items{
+    gap: 1rem;
+  }
+  .pricing-plans .items .item.popular{
+    margin-top: 0rem;
+  }
+  .statistic .items {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: .8rem;
+  }
+  .discount .items .form form .form-control input:not([type='submit']),
+  .discount .items .form form .form-control textarea,
+  .discount .items .form form .form-control button{
+    width: 90%;
+  }
+  .footer .items .item.images .icon{
+    margin: .2rem;
+  }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+  .container{
+    width: 100%;
+  }
+}
+@media screen and (min-width:992px){
+  .container{
+    width: 85%;
+  }
+  .navbar{
+    display: none;
+  }
+}
